@@ -11,9 +11,13 @@ const config = {
 			compiler: 'svelte'
 		}),
 		SvelteKitPWA({
+			outDir: '.svelte-kit/cloudflare',
+			kit: {
+				outDir: '.svelte-kit/cloudflare'
+			},
 			registerType: 'autoUpdate',
 			devOptions: {
-				enabled: true,
+				enabled: false,
 				type: 'module',
 				navigateFallback: '/'
 			},
